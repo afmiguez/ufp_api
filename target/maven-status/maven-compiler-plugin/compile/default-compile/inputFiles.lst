@@ -38,6 +38,7 @@
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/services/StudentPerfilService.java
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/models/responses/ResponseModel.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/Schedule.java
+/home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/models/responses/ScheduleJSON.java
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/controllers/MenuController.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/DecryptResponse.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/PerfilResponse.java

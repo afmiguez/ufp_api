@@ -11,6 +11,7 @@ ufp/wsdl/Docente.class
 ufp/wsdl/Encrypt.class
 edu/ufp/afmiguez/tk/ufp_api/services/AuthenticationService.class
 ufp/wsdl/package-info.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/ScheduleDetails.class
 ufp/wsdl/Schedule.class
 ufp/wsdl/Docentes.class
 ufp/wsdl/Schedulelanguage.class
@@ -39,6 +40,7 @@ ufp/wsdl/Gradelanguage.class
 ufp/wsdl/ScheduleResponse.class
 edu/ufp/afmiguez/tk/ufp_api/services/GradesService.class
 edu/ufp/afmiguez/tk/ufp_api/services/ATMService.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/ScheduleJSON.class
 edu/ufp/afmiguez/tk/ufp_api/services/AssiduityService.class
 edu/ufp/afmiguez/tk/ufp_api/controllers/PerfilController.class
 ufp/wsdl/DecryptResponse.class
