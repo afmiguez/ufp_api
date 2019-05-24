@@ -27,6 +27,7 @@ edu/ufp/afmiguez/tk/ufp_api/models/responses/ResponseJSONObject.class
 ufp/wsdl/AssiduityResponse.class
 edu/ufp/afmiguez/tk/ufp_api/controllers/MenuController.class
 ufp/wsdl/MenuResponse.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/AssiduityJSON.class
 edu/ufp/afmiguez/tk/ufp_api/models/responses/ResponseJSONString.class
 edu/ufp/afmiguez/tk/ufp_api/models/responses/ATMJson.class
 edu/ufp/afmiguez/tk/ufp_api/models/responses/GradeProvisory.class
@@ -47,6 +48,7 @@ ufp/wsdl/Assiduity.class
 ufp/wsdl/Menu.class
 edu/ufp/afmiguez/tk/ufp_api/controllers/ScheduleController.class
 ufp/wsdl/Perfil.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/ExameDetails.class
 ufp/wsdl/EncryptResponse.class
 edu/ufp/afmiguez/tk/ufp_api/models/responses/PerfilResponseJSON.class
 edu/ufp/afmiguez/tk/ufp_api/UfpApiApplication.class
@@ -72,6 +74,8 @@ ufp/wsdl/AtmResponse.class
 ufp/wsdl/Examelanguage.class
 ufp/wsdl/AssiduitylanguageResponse.class
 edu/ufp/afmiguez/tk/ufp_api/controllers/ATMController.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/AssiduityDetails.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/ExamesJSON.class
 edu/ufp/afmiguez/tk/ufp_api/models/responses/Grade.class
 edu/ufp/afmiguez/tk/ufp_api/services/ProfessorScheduleService.class
 ufp/wsdl/DocentesResponse.class

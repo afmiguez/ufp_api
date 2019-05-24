@@ -1,3 +1,4 @@
+/home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/models/responses/AssiduityJSON.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/Schedulelanguage.java
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/services/ProfessorScheduleService.java
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/services/AuthenticationService.java
@@ -53,6 +54,7 @@
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/models/responses/PerfilResponseJSON.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/Gradelanguage.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/Docente.java
+/home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/models/responses/ExamesJSON.java
 /home/afmiguez/ufp_api/target/generated-sources/xjc/ufp/wsdl/AssiduityResponse.java
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/services/ExamsService.java
 /home/afmiguez/ufp_api/src/main/java/edu/ufp/afmiguez/tk/ufp_api/models/responses/DocenteJSON.java
