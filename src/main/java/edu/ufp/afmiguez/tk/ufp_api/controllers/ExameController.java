@@ -17,7 +17,7 @@ public class ExameController {
         this.examsService = examsService;
     }
 
-    @GetMapping(value="/exame",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value="/exams",produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ResponseJSON> getAssiduity(@RequestParam String token, @RequestParam String language){
         ResponseJSON responseJSON=examsService.getAssiduityLanguage(token,language);
         if(responseJSON==null||responseJSON.getStatus().equals("Error")){

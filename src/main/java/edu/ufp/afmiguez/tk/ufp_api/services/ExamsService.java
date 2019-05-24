@@ -1,10 +1,15 @@
 package edu.ufp.afmiguez.tk.ufp_api.services;
 
+import edu.ufp.afmiguez.tk.ufp_api.Utils;
+import edu.ufp.afmiguez.tk.ufp_api.models.responses.ExamesJSON;
 import edu.ufp.afmiguez.tk.ufp_api.models.responses.ResponseJSON;
+import edu.ufp.afmiguez.tk.ufp_api.models.responses.ResponseJSONString;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ws.soap.client.core.SoapActionCallback;
 import ufp.wsdl.Examelanguage;
 import ufp.wsdl.ExamelanguageResponse;
+
+import java.io.IOException;
 
 public class ExamsService extends GenericService {
 
@@ -18,14 +23,12 @@ public class ExamsService extends GenericService {
         ExamelanguageResponse response=(ExamelanguageResponse)getWebServiceTemplate()
                 .marshalSendAndReceive(this.getUrl(),request,new SoapActionCallback(exameLanguageAction));
         this.logger.info(response.getExamelanguageResult());
-        /**
-         * TODO implement the assiduity
-         */
-//        try{
-//            return ResponseJSON.createResponse(Utils.getValue(perfilResponse.getPerfillanguageResult(), PerfilResponseJSON.class));
-//        }catch(IOException ioe){
-//            return ResponseJSONString.createError("Check your credentials");
-//        }
-        return null;
+
+        try{
+            return ResponseJSON.createResponse(Utils.getValue(response.getExamelanguageResult(), ExamesJSON.class));
+        }catch(IOException ioe){
+            ioe.printStackTrace();
+            return ResponseJSONString.createError("Check your credentials");
+        }
     }
 }

@@ -16,7 +16,7 @@ public class PerfilController {
         this.studentPerfilService = studentPerfilService;
     }
 
-    @GetMapping(value="/perfil",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value="/profile",produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ResponseJSON> getPerfil(@RequestParam String token,@RequestParam String language){
         ResponseJSON responseJSON=studentPerfilService.getPerfilLanguage(token,language);
         if(responseJSON.getStatus().equals("Error")){
