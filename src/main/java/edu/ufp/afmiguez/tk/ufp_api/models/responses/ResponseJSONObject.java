@@ -9,5 +9,4 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class ResponseJSONObject extends ResponseJSON{
     private ResponseModel message;
-
 }

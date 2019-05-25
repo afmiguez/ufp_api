@@ -1,7 +1,6 @@
 package edu.ufp.afmiguez.tk.ufp_api.models.responses;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Data
 public class ResponseJSON {
