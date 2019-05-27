@@ -63,7 +63,7 @@ class GradePartialDetails {
     @JsonProperty("Elemento")
     private String elemento;
     @JsonProperty("Nota")
-    private float nota;
+    private String nota;
     @JsonProperty("Responsavel")
     private String responsavel;
     @JsonProperty("Registo")

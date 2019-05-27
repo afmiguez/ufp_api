@@ -31,6 +31,7 @@ public class GradesService extends GenericService {
         try{
             return ResponseJSON.createResponse(Utils.getValue(response.getGradelanguageResult(), GradeJSON.class));
         }catch(IOException ioe){
+            ioe.printStackTrace();
             return ResponseJSONObject.createError("No grades available");
         }
     }
