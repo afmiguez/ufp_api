@@ -14,19 +14,37 @@ public class GradeJSON extends ResponseModel {
     @JsonProperty("grade")
     private Grade grade;
 
+    public GradeFinal getDetails(){
+        return new GradeFinal(this.grade.getDefinitivo());
+    }
+
+    public GradeProvisory getProvisorio(){
+        return this.grade.getProvisorio();
+    }
+
 }
 
 @Data
-class Grade {
+class Grade extends ResponseModel {
     @JsonProperty("definitivo")
     private List<GradeDetails> definitivo;
 
     @JsonProperty("provisorio")
     private GradeProvisory provisorio;
+
 }
 
 @Data
-class GradeDetails {
+class GradeFinal extends ResponseModel{
+    private List<GradeDetails> definitivo;
+
+    public GradeFinal(List<GradeDetails> definitivo) {
+        this.definitivo = definitivo;
+    }
+}
+
+@Data
+class GradeDetails extends ResponseModel {
     @JsonProperty("Grau")
     private String grau;
     @JsonProperty("Unidade")
@@ -42,7 +60,7 @@ class GradeDetails {
 }
 
 @Data
-class GradeProvisory {
+class GradeProvisory extends ResponseModel {
 
     @JsonProperty("parciais")
     private List<GradePartialDetails> parciais;
@@ -53,7 +71,7 @@ class GradeProvisory {
 }
 
 @Data
-class GradePartialDetails {
+class GradePartialDetails extends ResponseModel {
     @JsonProperty("AnoLectivo")
     private String anoLectivo;
     @JsonProperty("Modelo")

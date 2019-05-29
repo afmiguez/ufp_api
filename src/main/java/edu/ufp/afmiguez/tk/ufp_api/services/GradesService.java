@@ -14,8 +14,10 @@ import java.io.IOException;
 public class GradesService extends GenericService {
     @Value("${wsdl.action.gradelanguage}")
     private String gradeLanguageAction;
+    private static String FINAL="final";
+    private static String DETAILED="detailed";
 
-    public ResponseJSON getGradeLanguage(String token, String language){
+    public ResponseJSON getGradeLanguage(String token, String language,String param){
         Gradelanguage request=new Gradelanguage();
         request.setToken(token);
         request.setLanguage(language);
@@ -25,15 +27,27 @@ public class GradesService extends GenericService {
             return ResponseJSONObject.createError("Check your credentials");
         }
         this.logger.info(response.getGradelanguageResult());
-        /**
-         * TODO implement the assiduity
-         */
-        try{
-            return ResponseJSON.createResponse(Utils.getValue(response.getGradelanguageResult(), GradeJSON.class));
-        }catch(IOException ioe){
-            ioe.printStackTrace();
+        try {
+            GradeJSON gradeJSON=Utils.getValue(response.getGradelanguageResult(), GradeJSON.class);
+
+            if(param.equalsIgnoreCase(FINAL)){
+                return ResponseJSON.createResponse(gradeJSON.getDetails());
+            }else if(param.equalsIgnoreCase(DETAILED)){
+                return ResponseJSON.createResponse(gradeJSON.getProvisorio());
+            }else{
+                return ResponseJSONObject.createError("No option "+param+" available");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
             return ResponseJSONObject.createError("No grades available");
         }
+
+//        try{
+//            return ResponseJSON.createResponse();
+//        }catch(IOException ioe){
+//            ioe.printStackTrace();
+//            return ResponseJSONObject.createError("No grades available");
+//        }
     }
 
 }
