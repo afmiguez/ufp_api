@@ -3,6 +3,7 @@ edu/ufp/afmiguez/tk/ufp_api/controllers/AuthenticationController.class
 ufp/wsdl/ExameResponse.class
 edu/ufp/afmiguez/tk/ufp_api/models/Matricula.class
 edu/ufp/afmiguez/tk/ufp_api/models/responses/GradeFinal.class
+edu/ufp/afmiguez/tk/ufp_api/models/responses/ATMDetails.class
 ufp/wsdl/ShakeHands.class
 edu/ufp/afmiguez/tk/ufp_api/WSDLConfiguration.class
 edu/ufp/afmiguez/tk/ufp_api/Bootstrap.class

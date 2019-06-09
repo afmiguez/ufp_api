@@ -30,6 +30,4 @@ public class ATMService extends GenericService {
             return ResponseJSONString.createResponse("No ATM reference available");
         }
     }
-
-
 }
